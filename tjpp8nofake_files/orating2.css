@@ -1,0 +1,458 @@
+.orating {
+    margin-left: 2px;
+    width: 65px;
+    height: 12px;
+    padding: 7px 13px;
+    background: var(--ratingnull) !important;
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+    float: right;
+    top: -4px;
+}
+
+a.orating_res,
+span.orating_res {
+    font: bold 12px/12px 'Trebuchet MS';
+    color: #fff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+a.orating_res:hover {
+    color: #f0f0f0;
+}
+
+a.orating_m,
+a.orating_p {
+    height: 12px;
+    width: 12px;
+    background: url('../dleimages/oicons.png') no-repeat;
+}
+
+a.orating_m {
+    float: left;
+    background-position: -12px 0;
+}
+
+a.orating_m:hover {
+    background-position: -12px -12px;
+}
+
+a.orating_m.orated {
+    background-position: -12px -24px;
+}
+
+a.orating_p {
+    float: right;
+}
+
+a.orating_p:hover {
+    background-position: 0 -12px;
+}
+
+a.orating_p.orated {
+    background-position: 0 -24px;
+}
+
+
+
+.ocomm {
+    float: right;
+    width: 60px;
+    height: 12px;
+    padding: 3px 5px;
+    background: #d8d8d8;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+a.ocomm_res {
+    font: bold 10px/12px Tahoma;
+    color: #fff;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+
+a.ocomm_res:hover {
+    color: #f0f0f0;
+}
+
+.comm_hide {
+    padding: 10px 20px;
+    font: normal 12px Arial;
+    color: #666;
+}
+
+.comm_hide a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0 2px;
+    color: #07d;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.comm_hide a:hover {
+    color: #000;
+    border: 0;
+}
+
+.ogray {
+    box-shadow: inset 0 1px #e6e2e2;
+    background: #e6e2e2;
+}
+
+.oplus {
+    box-shadow: inset 0 1px var(--ratinggreen);
+    background: var(--ratinggreen) !important;
+}
+
+.ominus {
+    box-shadow: inset 0 1px #fd7979;
+    background: #fd7979 !important;
+}
+
+.ogold {
+    box-shadow: inset 0 1px var(--ratingyellow);
+    background: var(--ratingyellow) !important;
+}
+
+.oblack {
+    box-shadow: inset 0 1px #dd8585;
+    background: #dd8585;
+}
+
+.oload {
+    cursor: progress !important;
+}
+
+.ostats {
+    display: none;
+    background: var(--statsarea);
+    background: rgba(0, 0, 0, 0.15);
+    width: 270px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 999;
+}
+
+.ostats h4 {
+    text-align: left;
+    padding: 0 0 0 17px;
+    margin: 0;
+    border-bottom: 1px solid var(--statsborder);
+    background: var(--statsarea);
+    border-radius: 3px 3px 0 0;
+    height: 35px;
+    font: normal 13px/35px Tahoma, Arial;
+    color: #999;
+    cursor: move;
+}
+
+.ostats_area {
+    background: var(--statsarea);
+    border-radius: 3px;
+    padding-bottom: 1px;
+}
+
+.oclose {
+    width: 22px;
+    height: 22px;
+    background: url('../dleimages/oclose.png') no-repeat;
+    float: right;
+    margin: -3px -3px;
+    border: 0;
+    text-decoration: none;
+}
+
+.oclose:hover {
+    background-position: 0 -22px;
+}
+
+.oclose:active {
+    background-position: 0 -44px;
+}
+
+.ostats ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: none;
+    height: auto;
+}
+
+.ostats ul li {
+    display: block;
+    background: url('../dleimages/oarrow.png') no-repeat 10px 0;
+    border-bottom: 1px dotted var(--statsborder);
+    padding: 0 10px 0 32px;
+    float: none;
+    height: 22px;
+    font: normal 14px/22px 'Trebuchet MS', Tahoma;
+    position: relative;
+    overflow: hidden;
+}
+
+.ostats ul li.onoentry {
+    background: none;
+    text-align: center;
+    color: #999;
+    padding: 0 5px;
+}
+
+.ostats ul li:hover {
+    background-color: var(--statsuserhover);
+}
+
+.ostats ul li a:hover {
+    text-decoration: underline;
+}
+
+.ostats ul li.ostat-none {
+    background-image: none;
+}
+
+.ostats ul li.ostat-none a {
+    color: #888;
+}
+
+.ostats ul li.ostat-none:hover a {
+    color: #555;
+}
+
+.ostats ul li.ostat-plus {}
+
+.ostats ul li.ostat-plus a {
+    color: #82ac34;
+}
+
+.ostats ul li.ostat-plus:hover {
+    background-position: 10px -22px;
+}
+
+.ostats ul li.ostat-plus:hover a {
+    color: #546338;
+}
+
+.ostats ul li.ostat-minus {
+    background-position: 10px -44px;
+}
+
+.ostats ul li.ostat-minus a {
+    color: #ab3935;
+}
+
+.ostats ul li.ostat-minus:hover {
+    background-position: 10px -66px;
+}
+
+.ostats ul li.ostat-minus:hover a {
+    color: #522726;
+}
+
+.ostats ul li span {
+    float: right;
+    font-family: Arial;
+    color: #ccc;
+}
+
+.ostats ul li:hover span {
+    color: #777;
+}
+
+#ostats-userinfo {
+    position: absolute;
+    height: 22px;
+    background: rgba(88, 88, 88, 0.88);
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+#ostats-userinfo a {
+    display: inline-block;
+    padding: 0 15px;
+    color: #e3e5e7;
+    font: bold 10px/21px Tahoma;
+    height: 21px;
+    text-decoration: none;
+}
+
+#ostats-userinfo a:hover {
+    text-decoration: underline;
+    color: #fff;
+    background: #000;
+}
+
+#ostats-userinfo a.close {
+    float: right;
+}
+
+#okarma {
+    float: left;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.ostats-uservotes {
+    width: 880px;
+}
+
+.ostats-uservotes-area {
+    margin-right: 610px;
+}
+
+#ostats-user-ratings {
+    float: right;
+    width: 600px;
+    background: #fafafa;
+    border-radius: 4px;
+    padding-bottom: 5px;
+}
+
+#ostats-user-ratings ul {
+    overflow: auto;
+}
+
+.onavi {
+    padding: 10px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.onavi .opages {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.onavi .opages * {
+    padding: 0 5px;
+    font: normal 11px/22px Arial;
+    height: 22px;
+    margin: 0 3px 5px;
+    display: inline-block;
+    border-radius: 4px;
+    border-left: 1px solid var(--statsborder);
+    border-right: 1px solid var(--statsborder);
+}
+
+.onavi .opages a {
+    color: #82ac34;
+    text-decoration: none;
+}
+
+.onavi .opages a:hover {
+    color: #fff;
+    background-color: var(--statsnumbgkhover);
+}
+
+.onavi .opages span {
+    color: var(--colortxtgray);
+    background-color: var(--statsnumbgk);
+    cursor: default;
+}
+
+.usernavistart,
+.usernaviend {
+    background: url('../dleimages/ostats.png') no-repeat;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+    display: block;
+    height: 22px;
+    width: 22px;
+    border: 0;
+}
+
+.usernavistart {
+    left: -10px;
+}
+
+a.usernavistart:hover {
+    background-position: 0 -22px;
+}
+
+a.usernavistart:active {
+    background-position: 0 -44px;
+}
+
+span.usernavistart {
+    background-position: 0 -66px;
+}
+
+.usernaviend {
+    right: -10px;
+    background-position: -22px 0;
+}
+
+a.usernaviend:hover {
+    background-position: -22px -22px;
+}
+
+a.usernaviend:active {
+    background-position: -22px -44px;
+}
+
+span.usernaviend {
+    background-position: -22px -66px;
+}
+
+#orating-bar {
+    padding: 1px 0 1px 1px;
+    background: var(--statsum);
+    border-radius: 4px;
+    position: relative;
+    margin: 5px 2px;
+    height: 17px;
+}
+
+#orating-bar div {
+    float: left;
+    height: 15px;
+    overflow: hidden;
+}
+
+#orating-bar div p {
+    font: bold 10px/15px Tahoma;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#orating-bar-oplus {
+    border-top: 1px solid var(--greenstatstop);
+    border-bottom: 1px solid var(--greenstatsbottom);
+    background-color: var(--greenstatsbgk);
+    border-radius: 4px 0 0 4px;
+}
+
+#orating-bar-ominus {
+    border-top: 1px solid var(--redstatstop);
+    border-bottom: 1px solid var(--redstatsbottom);
+    background-color: var(--redstatsbgk);
+    border-radius: 0 4px 4px 0;
+}
+
+/*
+#orating-bar-separator {
+    border-top: 1px solid #f7f7f7;
+    border-left: 1px solid #f7f7f7;
+    border-bottom: 1px solid #dedede;
+    background-color: #eaeaea;
+    width: 3px;
+    margin-left: -2px;
+    position: absolute;
+}
+*/
